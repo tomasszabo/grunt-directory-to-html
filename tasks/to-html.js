@@ -84,7 +84,7 @@ module.exports = function(grunt) {
       directories = splitPaths.slice(0, filenameIndex);
     }
 
-    addFileLocationToDirectoryStructure(directoryStructure, directories, filepath, 0);
+    addFileLocationToDirectoryStructure(directoryStructure, directories, relativePath, 0);
   }
 
   function getDirectoryInFilepath(name, filepath, sliceFromNameToEnd) {
