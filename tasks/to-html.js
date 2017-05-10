@@ -70,7 +70,8 @@ module.exports = function(grunt) {
 
 
   function buildDataStructure(options, directoryStructure, filepath) {
-    var splitPaths = getDirectoryInFilepath(options.rootDirectory, filepath, true).split('/');
+    var relativePath = getDirectoryInFilepath(options.rootDirectory, filepath, true);
+    var splitPaths = relativePath.split('/');
     var filenameIndex = splitPaths.length - 1;
     var directories;
 
